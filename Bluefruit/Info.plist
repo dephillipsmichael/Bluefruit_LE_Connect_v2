@@ -38,7 +38,7 @@
 	<string>Image Transfer requires access to the photo gallery</string>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>com.adafruit.bluefruitconnect.scan</string>
+		<string>com.4youandme.bluefruitconnect.scan</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

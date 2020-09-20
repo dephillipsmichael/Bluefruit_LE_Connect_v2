@@ -9,6 +9,6 @@
 import Foundation
 
 class HandoffManager {
-    static let kUserActivityType = "com.adafruit.bluefruitconnect.scan"           // Note: same value that NSUserActivityTypes in Info.plist
+    static let kUserActivityType = "com.4youandme.bluefruitconnect.scan"           // Note: same value that NSUserActivityTypes in Info.plist
     static let kIdentifierKey = "identifier"
 }

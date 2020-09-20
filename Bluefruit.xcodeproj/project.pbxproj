@@ -1548,7 +1548,6 @@
 				TargetAttributes = {
 					A9286C951E3A9216008E5F81 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2X94RM7457;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1559,13 +1558,11 @@
 					};
 					A9BCD5991E4D2761003D1CEA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2X94RM7457;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					A9BCD5A51E4D2761003D1CEA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2X94RM7457;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -2080,7 +2077,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bluefruit/Bluefruit.entitlements;
 				CURRENT_PROJECT_VERSION = 51;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = 2X94RM7457;
+				DEVELOPMENT_TEAM = 25S45RFPZF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2154,7 +2151,7 @@
 					"\"iOSDFULibrary\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D MQTT_ENABLED";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adafruit.bluefruitconnect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4youandme.bluefruitconnect;
 				PRODUCT_NAME = "Bluefruit Connect";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bluefruit/Bluefruit-Bridging-Header.h";
@@ -2170,7 +2167,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bluefruit/Bluefruit.entitlements;
 				CURRENT_PROJECT_VERSION = 51;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = 2X94RM7457;
+				DEVELOPMENT_TEAM = 25S45RFPZF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2244,7 +2241,7 @@
 					"\"iOSDFULibrary\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D MQTT_ENABLED";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adafruit.bluefruitconnect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4youandme.bluefruitconnect;
 				PRODUCT_NAME = "Bluefruit Connect";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bluefruit/Bluefruit-Bridging-Header.h";
@@ -2257,7 +2254,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CURRENT_PROJECT_VERSION = 51;
-				DEVELOPMENT_TEAM = 2X94RM7457;
+				DEVELOPMENT_TEAM = 25S45RFPZF;
 				INFOPLIST_FILE = "Bluefruit/Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2265,7 +2262,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 3.6.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adafruit.bluefruitconnect.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4youandme.bluefruitconnect.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2280,7 +2277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CURRENT_PROJECT_VERSION = 51;
-				DEVELOPMENT_TEAM = 2X94RM7457;
+				DEVELOPMENT_TEAM = 25S45RFPZF;
 				INFOPLIST_FILE = "Bluefruit/Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2288,7 +2285,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 3.6.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adafruit.bluefruitconnect.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4youandme.bluefruitconnect.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2304,11 +2301,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 51;
-				DEVELOPMENT_TEAM = 2X94RM7457;
+				DEVELOPMENT_TEAM = 25S45RFPZF;
 				IBSC_MODULE = Bluefruit_Extension;
 				INFOPLIST_FILE = Bluefruit/Watch/Info.plist;
 				MARKETING_VERSION = 3.6.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adafruit.bluefruitconnect.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4youandme.bluefruitconnect.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2325,11 +2322,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 51;
-				DEVELOPMENT_TEAM = 2X94RM7457;
+				DEVELOPMENT_TEAM = 25S45RFPZF;
 				IBSC_MODULE = Bluefruit_Extension;
 				INFOPLIST_FILE = Bluefruit/Watch/Info.plist;
 				MARKETING_VERSION = 3.6.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adafruit.bluefruitconnect.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4youandme.bluefruitconnect.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

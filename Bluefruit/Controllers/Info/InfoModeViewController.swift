@@ -237,12 +237,40 @@ class InfoModeViewController: PeripheralModeViewController {
     }
 
     // MARK: - Descriptors
+    var dataReadCount: Int = 0
+    var dataReadStartTime = Date().timeIntervalSince1970
+    var startTime:TimeInterval?
     private func didDicoverDescriptors(for characteristic: CBCharacteristic) {
 
         if let descriptors = characteristic.descriptors {
             for descriptor in descriptors {
 
                 let isAForbiddenCCCD = descriptor.uuid == InfoModeViewController.kForbiddenDescriptorUUID && (characteristic.uuid == BlePeripheral.kUartRxCharacteristicUUID || characteristic.uuid == InfoModeViewController.kDfuControlPointCharacteristicUUID)
+                
+                self.dataReadStartTime = Date().timeIntervalSince1970
+                blePeripheral?.enableNotify(for: characteristic, handler: { (error) in
+                    if error != nil {
+                        print("Error reading characteristic")
+                    }
+                    if self.startTime == nil {
+                        let startTimeUnwrapped = Date().timeIntervalSince1970
+                        self.startTime = startTimeUnwrapped
+                        print("Reading characteristic started after \(startTimeUnwrapped - self.dataReadStartTime)")
+                    }
+                    //print("data read ")
+                    self.dataReadCount = self.dataReadCount + 1
+                    let timePassed = Date().timeIntervalSince1970 - self.dataReadStartTime
+//                    print("Notify #\(self.dataReadCount) speed is \(Double(self.dataReadCount) / timePassed)")
+                    
+                    if let data = characteristic.value {
+                        let values = [UInt8](data)
+                        let realVal: UInt32 = UInt32(values[3]) + UInt32(values[2] << 8) + UInt32(values[1] << 16) + UInt32(values[0] << 24)
+                        print("New value \(realVal)")
+                    } else {
+                        print("Error reading values")
+                    }
+                })
+                
                 if InfoModeViewController.kReadForbiddenCCCD || !isAForbiddenCCCD {
                     valuesToRead += 1
                     blePeripheral?.readDescriptor(descriptor) { [weak self] (data, error) in
