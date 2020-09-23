@@ -257,18 +257,20 @@ class InfoModeViewController: PeripheralModeViewController {
                         self.startTime = startTimeUnwrapped
                         print("Reading characteristic started after \(startTimeUnwrapped - self.dataReadStartTime)")
                     }
+                    if let data = characteristic.value {
+                       let values = [UInt8](data)
+                       print("\nNew values \(values)")
+                   } else {
+                       print("Error reading values")
+                   }
+                    
                     //print("data read ")
                     self.dataReadCount = self.dataReadCount + 1
                     let timePassed = Date().timeIntervalSince1970 - self.dataReadStartTime
-//                    print("Notify #\(self.dataReadCount) speed is \(Double(self.dataReadCount) / timePassed)")
+                    let hz = Double(self.dataReadCount) / timePassed
+                    print("\nNotify count \(self.dataReadCount) over \(timePassed) seconds\nSpeed is \(hz) Hz or \(hz*16) bytes/sec with each notify at 16 bytes")
                     
-                    if let data = characteristic.value {
-                        let values = [UInt8](data)
-                        let realVal: UInt32 = UInt32(values[3]) + UInt32(values[2] << 8) + UInt32(values[1] << 16) + UInt32(values[0] << 24)
-                        print("New value \(realVal)")
-                    } else {
-                        print("Error reading values")
-                    }
+                   
                 })
                 
                 if InfoModeViewController.kReadForbiddenCCCD || !isAForbiddenCCCD {
